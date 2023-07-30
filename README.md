@@ -68,21 +68,26 @@ Because the camera is always curved, the value of the image processing algorithm
 </p>
 
 - **Optical Flow algorithm results:**
+Result of applying PLK (Pyramid Lucas – Kanade) algorithm when there are few features (left figure).
+Result of applying PLK (Pyramid Lucas – Kanade) algorithm when there are many features (right figure).
 
 <div style="display: flex;">
-  <img src="images/robot_3dof_real.png" width="400">
-  <img src="images/robot_3dof_real_1.png" width="400">
+  <img src="images/optical_flow_result.png" width="360">
+  <img src="images/Vector_optical_flow1.png" width="400">
 </div>
 
-Interface function:
-* **Set Home button**: run the robot model in the Set Home position.
-* **STOP button**: stop running the robot model.
-* **RESET button**: reset the value of theta angles to 0.
-* **SOLVE button**: calculate angle theta 1,2,3 from the given position of Px, Py, Pz.
-* **Enter the simulated angle in 2 ways**: drag the slider or enter it directly.
-* **Inverse kinematics**: synchronous control of joints.
+- **Evaluation of the PID controller:**
+The PID controller applies to the Drone model to control altitude and position hold.
 
-# Experiments results
-Detailed instructions for calculating forward and reverse kinematics, designing a 3-DOF robot model on SolidWorks software, programming Arduino and designing a control interface on Python as follows: https://youtu.be/alXVkWIuink
+<p align="center">
+  <img src="images/PID_altitude.png" width=400><br/>
+  <i>Result of PID controller holding altitude</i>
+</p>
 
-Demo in real-time to test Forward and Inverse kinematics: https://youtu.be/NMyBhp15TCM
+<p align="center">
+  <img src="images/experiment.png" width=400><br/>
+  <i>Realistic results quadcopter keeps altitude and position</i>
+</p>
+
+# Video
+https://youtu.be/sdybXYhyMzA
