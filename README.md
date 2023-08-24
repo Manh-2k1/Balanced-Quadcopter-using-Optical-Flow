@@ -59,7 +59,7 @@ The first controller is the altitude controller. In order for the Quadcopter to 
 </p>
 
 # Results and reviews
-To facilitate the control and monitoring of the robot's activities, the matching variable values, the work coordinates. The team created the console on the Sublime Text software using the Python language.
+
 - **Evaluation of image processing algorithms:**
 Because the camera is always curved, the value of the image processing algorithm is often wrong. Therefore, the process of camera calibration plays a very important role.
 <p align="center">
